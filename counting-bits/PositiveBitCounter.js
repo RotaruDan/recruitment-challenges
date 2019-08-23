@@ -1,5 +1,8 @@
+const PositiveInteger = require('./PositiveInteger')
+
 function Count (input) {
-  throw new Error('Not implemented')
+  let positiveInteger = new PositiveInteger(input)
+  return positiveInteger.reverseBitsCount()
 }
 
-module.exports = { Count }
+module.exports = {Count}
